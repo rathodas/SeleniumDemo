@@ -29,6 +29,8 @@ public class DemoBrowser {
 		
 		FirefoxDriver driver = new FirefoxDriver();
 		driver.get("https://www.selenium.dev");
+		driver.quit();
+		
 		
 	}
 }
