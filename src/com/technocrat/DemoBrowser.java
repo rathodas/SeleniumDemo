@@ -1,7 +1,7 @@
 package com.technocrat;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class DemoBrowser {
 
@@ -27,10 +27,15 @@ public class DemoBrowser {
 		 * driver.quit(); Thread.sleep(5000);
 		 */
 		
-		FirefoxDriver driver = new FirefoxDriver();
+		/*
+		 * FirefoxDriver driver = new FirefoxDriver();
+		 * driver.get("https://www.selenium.dev"); driver.quit();
+		 */
+		
+		InternetExplorerDriver driver = new InternetExplorerDriver();
+		
 		driver.get("https://www.selenium.dev");
 		driver.quit();
-		
 		
 	}
 }
